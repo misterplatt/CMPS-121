@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/material_deep_teal_500">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bay Area News!"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="clicksf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read SF Gate"
+        android:minWidth="250dp"
+        android:minHeight="60dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="clicksj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read SJ Mercury"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:minWidth="250dp"
+        android:minHeight="60dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="clicksc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read SC Sentinel"
+        android:minWidth="250dp"
+        android:minHeight="60dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+</RelativeLayout>
